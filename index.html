@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html>
-<body>
+<!-- body -->
+  <head>
+  <script>
+    function checkPassword()
+    {
+      var password = document.getElementById("passwordBox");
+      var passwordText = password.value;
+      if(passwordText == "code")
+      {
+        return true;
+      }
+      alert("Access denied! Incorrect password!");
+      return false;
+    }
+  </script>
+  </head> 
+  <body>
+    <p>Please enter the password to view the website. </p>
+    <p>Password:<input id="passwordBox" type="password"/></p>
+    <a href="google.com" onclick="return checkPassword();">
+      submit
+    </a>
+  </body>
+</html>
   
-  <h1 align="center"> PowerWithin </h1>
+  
+  
+  
+  <!-- <h1 align="center"> PowerWithin </h1>
   <h2 align="center"> Mumbai </h2>
   
   <br>
@@ -73,4 +99,4 @@
                 </ul>
   </ol>  
 </body>
-</html>
+</html> -->
